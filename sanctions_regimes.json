@@ -1,0 +1,167 @@
+[
+  {
+    "jurisdiction_or_body": "USA",
+    "issuing_authority": "U.S. Department of the Treasury - Office of Foreign Assets Control (OFAC)",
+    "governing_law_or_statute": "International Emergency Economic Powers Act (IEEPA); Trading with the Enemy Act (TWEA); Country/program-specific Executive Orders (e.g., E.O. 13224 counter-terrorism, E.O. 13662 Russia/Ukraine-related sectoral sanctions, E.O. 13810 North Korea)",
+    "list_name": "Specially Designated Nationals and Blocked Persons List (SDN List)",
+    "sanction_types": ["Asset Freeze", "Secondary Sanctions", "Correspondent Account Restriction"],
+    "target_categories": ["Individuals", "Entities", "Vessels", "Aircraft", "Jurisdictions/Countries"],
+    "ownership_control_rules": "OFAC 50% Rule: any entity owned in the aggregate, directly or indirectly, 50% or more by one or more blocked persons is itself treated as blocked, regardless of whether the entity is separately listed.",
+    "update_frequency": "Ad-hoc / Real-time (published upon designation, frequently several times per month)",
+    "official_endpoint_or_source": "OFAC Sanctions List Search / SDN.XML, SDN.CSV, SDN.PDF via treasury.gov/ofac and the OFAC Sanctions List Service (SLS) API"
+  },
+  {
+    "jurisdiction_or_body": "USA",
+    "issuing_authority": "U.S. Department of the Treasury - Office of Foreign Assets Control (OFAC)",
+    "governing_law_or_statute": "IEEPA; E.O. 13662 (Sectoral Sanctions - Russia); Ukraine-/Russia-Related Sanctions Regulations",
+    "list_name": "Non-SDN Lists: Sectoral Sanctions Identifications (SSI) List, Correspondent Account or Payable-Through Account Sanctions (CAPTA) List, Non-SDN Chinese Military-Industrial Complex Companies List (NS-CMIC), Non-SDN Menu-Based Sanctions List (NS-MBS)",
+    "sanction_types": ["Sectoral Sanctions", "Correspondent Account Restriction", "Secondary Sanctions"],
+    "target_categories": ["Entities", "Individuals"],
+    "ownership_control_rules": "OFAC 50% Rule applies equivalently to entities owned 50%+ by one or more SSI/CMIC-listed persons for the specific restricted activities defined per directive.",
+    "update_frequency": "Ad-hoc",
+    "official_endpoint_or_source": "OFAC Sanctions List Search; individual CSV/XML files per list at treasury.gov/ofac"
+  },
+  {
+    "jurisdiction_or_body": "USA",
+    "issuing_authority": "U.S. Department of Commerce - Bureau of Industry and Security (BIS)",
+    "governing_law_or_statute": "Export Control Reform Act (ECRA); Export Administration Regulations (EAR), 15 CFR Part 744",
+    "list_name": "Entity List; Unverified List; Military End User (MEU) List; Denied Persons List",
+    "sanction_types": ["Sectoral Sanctions", "Arms Embargo"],
+    "target_categories": ["Entities", "Individuals", "Jurisdictions/Countries"],
+    "ownership_control_rules": "EAR does not apply an automatic 50% ownership aggregation rule equivalent to OFAC's; license requirements and screening obligations are generally assessed at the listed-entity level unless BIS guidance specifies affiliate coverage.",
+    "update_frequency": "Ad-hoc (Federal Register rule updates)",
+    "official_endpoint_or_source": "Bureau of Industry and Security Consolidated Screening List (CSL) at bis.doc.gov; also aggregated at trade.gov Consolidated Screening List API/CSV"
+  },
+  {
+    "jurisdiction_or_body": "USA",
+    "issuing_authority": "U.S. Department of State - Directorate of Defense Trade Controls (DDTC)",
+    "governing_law_or_statute": "Arms Export Control Act (AECA); International Traffic in Arms Regulations (ITAR), 22 CFR Parts 120-130",
+    "list_name": "ITAR Statutorily Debarred List; Non-proliferation Sanctions determinations",
+    "sanction_types": ["Arms Embargo", "Sectoral Sanctions"],
+    "target_categories": ["Individuals", "Entities"],
+    "ownership_control_rules": "Not Publicly Specified as an automatic aggregation rule; debarment applies to the named party and, per specific State Department determinations, related persons identified in the debarment notice.",
+    "update_frequency": "Ad-hoc",
+    "official_endpoint_or_source": "DDTC Consolidated Screening List entries; pmddtc.state.gov (Debarred Parties List)"
+  },
+  {
+    "jurisdiction_or_body": "UK",
+    "issuing_authority": "HM Treasury (HMT) - Office of Financial Sanctions Implementation (OFSI)",
+    "governing_law_or_statute": "Sanctions and Anti-Money Laundering Act 2018 (SAMLA); country/thematic-specific Sanctions Regulations made under SAMLA (e.g., The Russia (Sanctions) (EU Exit) Regulations 2019)",
+    "list_name": "UK Sanctions List (Consolidated List of Financial Sanctions Targets)",
+    "sanction_types": ["Asset Freeze", "Travel Ban", "Sectoral Sanctions", "Arms Embargo", "Correspondent Account Restriction"],
+    "target_categories": ["Individuals", "Entities", "Vessels", "Aircraft", "Jurisdictions/Countries"],
+    "ownership_control_rules": "UK 'ownership or control' test: an entity is owned if a person holds directly/indirectly more than 50% of shares or voting rights; 'controlled' tests are broader and consider rights to appoint/remove a majority of the board, or reasonable expectation that the designated person's instructions will be followed.",
+    "update_frequency": "Real-time / Ad-hoc (updated as designations occur, typically same-day)",
+    "official_endpoint_or_source": "gov.uk UK Sanctions List (OFSI Consolidated List) - CSV, ODS, and XML downloads at gov.uk/government/publications/financial-sanctions-consolidated-list-of-targets"
+  },
+  {
+    "jurisdiction_or_body": "UK",
+    "issuing_authority": "Foreign, Commonwealth & Development Office (FCDO)",
+    "governing_law_or_statute": "Sanctions and Anti-Money Laundering Act 2018 (SAMLA)",
+    "list_name": "UK Sanctions List (designation policy and country regime guidance)",
+    "sanction_types": ["Travel Ban", "Arms Embargo", "Sectoral Sanctions"],
+    "target_categories": ["Individuals", "Entities", "Jurisdictions/Countries"],
+    "ownership_control_rules": "Same 'ownership or control' test as applied by OFSI under SAMLA-derived regulations.",
+    "update_frequency": "Ad-hoc",
+    "official_endpoint_or_source": "gov.uk/government/collections/uk-sanctions-regimes-under-the-sanctions-act"
+  },
+  {
+    "jurisdiction_or_body": "UNSC",
+    "issuing_authority": "United Nations Security Council - Sanctions Committees (Secretariat: UN Security Council Subsidiary Organs Branch)",
+    "governing_law_or_statute": "UN Charter Chapter VII resolutions establishing sanctions regimes, including UNSCR 1267 (1999)/1989 (2011)/2253 (2015) ISIL (Da'esh) & Al-Qaida; UNSCR 1988 (2011) Taliban; UNSCR 1718 (2006) DPRK; and further country/thematic-specific resolutions",
+    "list_name": "UN Security Council Consolidated List (comprising the ISIL (Da'esh) and Al-Qaida List, the 1988 Taliban Sanctions List, the 1718 DPRK Sanctions List, and other committee-specific lists)",
+    "sanction_types": ["Asset Freeze", "Travel Ban", "Arms Embargo"],
+    "target_categories": ["Individuals", "Entities", "Vessels", "Aircraft"],
+    "ownership_control_rules": "UN Consolidated List guidance recommends member states apply a 'directly or indirectly owned or controlled' standard; specific ownership percentage thresholds are left to implementing member states' domestic legislation (Not Publicly Specified as a single UN-wide numeric threshold).",
+    "update_frequency": "Ad-hoc",
+    "official_endpoint_or_source": "UN Security Council Consolidated List - XML/PDF/HTML at un.org/securitycouncil/content/un-sc-consolidated-list"
+  },
+  {
+    "jurisdiction_or_body": "FATF",
+    "issuing_authority": "Financial Action Task Force (FATF), Paris-based intergovernmental standard-setting body",
+    "governing_law_or_statute": "FATF 40 Recommendations, in particular Recommendation 6 (Targeted Financial Sanctions related to Terrorism and Terrorist Financing) and Recommendation 7 (Targeted Financial Sanctions related to Proliferation)",
+    "list_name": "High-Risk Jurisdictions Subject to a Call for Action (the 'Black List'); Jurisdictions Under Increased Monitoring (the 'Grey List')",
+    "sanction_types": [],
+    "target_categories": ["Jurisdictions/Countries"],
+    "ownership_control_rules": "Not Publicly Specified - FATF is a standard-setter and does not itself impose asset freezes or beneficial-ownership aggregation thresholds; it sets expectations (e.g., beneficial ownership transparency standards) that member states must legislate individually.",
+    "update_frequency": "Triannual (published following each FATF Plenary, typically February, June, and October)",
+    "official_endpoint_or_source": "fatf-gafi.org - 'High-Risk Jurisdictions and Other Monitored Jurisdictions' page (HTML/PDF, no structured API)"
+  },
+  {
+    "jurisdiction_or_body": "UAE",
+    "issuing_authority": "Executive Office for Control & Non-Proliferation (EOCN); UAE Cabinet, in coordination with the Ministry of Foreign Affairs and the Financial Intelligence Unit",
+    "governing_law_or_statute": "Federal Decree-Law No. (20) of 2018 on Anti-Money Laundering and Combating the Financing of Terrorism and Illegal Organisations (as amended); Cabinet Decision No. (74) of 2020 Regarding Terrorism Lists Regulation and Implementation of UN Security Council Resolutions on the Suppression and Combating of Terrorism, Terrorism Financing, Countering the Proliferation of Weapons of Mass Destruction and its Financing and Relevant Resolutions",
+    "list_name": "UAE Local Terrorist List; UN Consolidated List (as implemented domestically); National Committee for Combating Money Laundering and Financing of Terrorism and Financing of Illegal Organisations (NAMLCFTC) Sanctions/Target Financial Sanctions List",
+    "sanction_types": ["Asset Freeze", "Travel Ban", "Sectoral Sanctions"],
+    "target_categories": ["Individuals", "Entities"],
+    "ownership_control_rules": "Cabinet Decision 74/2020 requires freezing of funds owned or controlled, directly or indirectly, wholly or jointly, by a listed person, including entities owned or controlled by a listed person; specific percentage thresholds are set by EOCN implementing guidance rather than a fixed statutory percentage (Not Publicly Specified as a single numeric threshold in the primary decision text).",
+    "update_frequency": "Ad-hoc, with a statutory 'without delay' implementation requirement",
+    "official_endpoint_or_source": "Executive Office for Control & Non-Proliferation portal (uaeiec.gov.ae) - Local Terrorist List and UN Consolidated List notifications"
+  },
+  {
+    "jurisdiction_or_body": "UAE",
+    "issuing_authority": "Central Bank of the UAE (CBUAE)",
+    "governing_law_or_statute": "Federal Decree-Law No. (14) of 2018 (Central Bank Law); CBUAE AML/CFT regulations and notices implementing Cabinet Decision No. (74) of 2020",
+    "list_name": "CBUAE Targeted Financial Sanctions notices/circulars to Licensed Financial Institutions",
+    "sanction_types": ["Asset Freeze", "Correspondent Account Restriction"],
+    "target_categories": ["Individuals", "Entities"],
+    "ownership_control_rules": "Licensed financial institutions must screen and freeze without delay, and within 24 hours of a new listing, per CBUAE guidance implementing Cabinet Decision 74/2020's 'without delay' standard.",
+    "update_frequency": "Ad-hoc, with 24-hour compliance/freeze timeline mandated for Licensed Financial Institutions",
+    "official_endpoint_or_source": "centralbank.ae - AML/CFT notices and circulars (Direct Government Directive; no public machine-readable feed specified)"
+  },
+  {
+    "jurisdiction_or_body": "UAE",
+    "issuing_authority": "Dubai Financial Services Authority (DFSA) / Financial Services Regulatory Authority (FSRA, Abu Dhabi Global Market)",
+    "governing_law_or_statute": "DFSA Anti-Money Laundering, Counter-Terrorist Financing and Sanctions Module (AML Module) of the DFSA Rulebook; FSRA AML Rulebook, both implementing Cabinet Decision No. (74) of 2020 within their respective financial free zones (DIFC, ADGM)",
+    "list_name": "DFSA/FSRA Sanctions compliance directives referencing the UAE Local Terrorist List and UN Consolidated List",
+    "sanction_types": ["Asset Freeze", "Correspondent Account Restriction"],
+    "target_categories": ["Individuals", "Entities"],
+    "ownership_control_rules": "Regulated entities in DIFC/ADGM must apply the same ownership/control freeze obligations set by Cabinet Decision 74/2020, screening for direct or indirect ownership/control by a listed person.",
+    "update_frequency": "Ad-hoc",
+    "official_endpoint_or_source": "dfsa.ae and adgm.com/fsra - AML/sanctions rulebook publications (Direct Government Directive)"
+  },
+  {
+    "jurisdiction_or_body": "EU",
+    "issuing_authority": "Council of the European Union, implemented via European External Action Service (EEAS) / European Commission Financial Sanctions Database",
+    "governing_law_or_statute": "Treaty on European Union (TEU) Article 29 (Common Foreign and Security Policy Decisions); Treaty on the Functioning of the European Union (TFEU) Article 215 (Restrictive Measures Regulations); country/thematic-specific Council Decisions and Regulations (e.g., Council Regulation (EU) No 833/2014 concerning Russia)",
+    "list_name": "EU Consolidated List of Persons, Groups and Entities Subject to EU Financial Sanctions",
+    "sanction_types": ["Asset Freeze", "Travel Ban", "Sectoral Sanctions", "Arms Embargo"],
+    "target_categories": ["Individuals", "Entities", "Vessels", "Aircraft", "Jurisdictions/Countries"],
+    "ownership_control_rules": "EU 50% Rule (aggregated): funds/resources of an entity are presumed controlled by a listed person if that person owns more than 50% of the proprietary rights, or holds a majority interest, whether alone or in aggregate with other listed persons.",
+    "update_frequency": "Real-time / Ad-hoc (Official Journal publication triggers immediate legal effect)",
+    "official_endpoint_or_source": "EU Sanctions Map / EEAS Financial Sanctions Database (webgate.ec.europa.eu/fsd) - XML, CSV downloads; consolidated list also at sanctionsmap.eu"
+  },
+  {
+    "jurisdiction_or_body": "Switzerland",
+    "issuing_authority": "State Secretariat for Economic Affairs (SECO)",
+    "governing_law_or_statute": "Federal Act on the Implementation of International Sanctions (Embargo Act, EmbA); individual sanctions Ordinances per country/regime",
+    "list_name": "SECO Sanctions List / List of Persons, Entities and Organisations Subject to Swiss Sanctions",
+    "sanction_types": ["Asset Freeze", "Travel Ban", "Sectoral Sanctions", "Arms Embargo"],
+    "target_categories": ["Individuals", "Entities", "Vessels", "Jurisdictions/Countries"],
+    "ownership_control_rules": "Swiss practice generally mirrors the EU's majority-ownership/control presumption (more than 50%) for entities linked to listed persons, applied via SECO guidance on individual Ordinances.",
+    "update_frequency": "Ad-hoc",
+    "official_endpoint_or_source": "seco.admin.ch - Swiss Sanctions List, State Secretariat for Economic Affairs (SECO) SESAM XML/search tool"
+  },
+  {
+    "jurisdiction_or_body": "Canada",
+    "issuing_authority": "Global Affairs Canada, implemented in cooperation with the Office of the Superintendent of Financial Institutions (OSFI)",
+    "governing_law_or_statute": "Special Economic Measures Act (SEMA); United Nations Act; Justice for Victims of Corrupt Foreign Officials Act (JVCFOA); Freezing Assets of Corrupt Foreign Officials Act (FACFOA)",
+    "list_name": "Consolidated Canadian Autonomous Sanctions List",
+    "sanction_types": ["Asset Freeze", "Sectoral Sanctions", "Arms Embargo"],
+    "target_categories": ["Individuals", "Entities", "Vessels", "Jurisdictions/Countries"],
+    "ownership_control_rules": "SEMA regulations prohibit dealings with entities owned or controlled by a listed person; Canada does not publish a single fixed percentage threshold in statute (Not Publicly Specified as a numeric rule), guidance is issued case-by-case by Global Affairs Canada.",
+    "update_frequency": "Ad-hoc",
+    "official_endpoint_or_source": "international.gc.ca - Consolidated Canadian Autonomous Sanctions List (CSV/XML)"
+  },
+  {
+    "jurisdiction_or_body": "Australia",
+    "issuing_authority": "Department of Foreign Affairs and Trade (DFAT), Australian Sanctions Office",
+    "governing_law_or_statute": "Autonomous Sanctions Act 2011 and Autonomous Sanctions Regulations 2011; Charter of the United Nations Act 1945 (for UN-mandated sanctions)",
+    "list_name": "Australian Sanctions List / Consolidated List (DFAT)",
+    "sanction_types": ["Asset Freeze", "Travel Ban", "Sectoral Sanctions", "Arms Embargo"],
+    "target_categories": ["Individuals", "Entities", "Vessels", "Jurisdictions/Countries"],
+    "ownership_control_rules": "Australian regulations restrict dealings with assets owned or controlled by a designated person, including where a designated person owns 50% or more of an entity or otherwise controls it, consistent with DFAT guidance.",
+    "update_frequency": "Ad-hoc",
+    "official_endpoint_or_source": "dfat.gov.au - Consolidated List (CSV) under Australian Sanctions Office publications"
+  }
+]
