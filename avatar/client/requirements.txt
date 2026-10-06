@@ -1,0 +1,7 @@
+aiortc>=1.9
+aiohttp>=3.9
+numpy
+opencv-python
+sounddevice
+faster-whisper
+anthropic

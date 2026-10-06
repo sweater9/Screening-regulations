@@ -13,6 +13,20 @@ infra + glue; nothing here has been run against a real GPU yet, so treat it as u
 6. `DURATION=120 scripts/benchmark.sh`. Acceptance: FPS >= 25 and per-stage latency reported.
 7. `scripts/vm.sh stop` when idle.
 
+## Native client (no browser)
+`client/avatar_client.py` is a desktop window for the Mac: WebRTC video/audio from LiveTalking's `/offer`,
+local mic + faster-whisper, Claude called from the Mac (key in `ANTHROPIC_API_KEY` only), each sentence sent to
+`/human` (`type: echo`), barge-in via `/interrupt_talk`. Routes were read from LiveTalking's `app.py` and
+`server/routes.py`, but the client itself is untested against a live server.
+```
+cd client && python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+python prepare_face.py portrait.jpg face.png        # face-only square crop
+ANTHROPIC_API_KEY=... python avatar_client.py http://VM_IP:8010   # q or Esc closes the window
+```
+Turning `face.png` into a LiveTalking avatar folder (`data/avatars/<id>`) still needs LiveTalking's own avatar
+generation tooling; I did not find a documented command, so check its README/avatars code on the VM.
+Tune `SPEECH_RMS`/`BARGE_RMS` in the client; speaker bleed can false-trigger barge-in, so headphones help.
+
 ## Cost (list prices from the handoff, verify current)
 g2-standard-4 (L4) ~ $0.71/hr; 12-16 vCPU sizes ~ $1.00-1.15/hr; disk and egress extra. Stopped VMs still pay for disk.
 
